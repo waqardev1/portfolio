@@ -158,7 +158,6 @@ button {
 
 .site-header {
   background-color: white;
-  border-bottom: 1px solid rgba(27, 58, 92, 0.08);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -278,7 +277,6 @@ button {
   flex-shrink: 1;
   min-width: fit-content;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
   display: flex;
   align-items: center;
   justify-content: center;

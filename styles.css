@@ -176,16 +176,17 @@ button {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-lg);
+  padding: 0 var(--spacing-md);
   flex-wrap: nowrap;
   gap: var(--spacing-md);
+  min-width: 0;
 }
 
 /* Brand / Logo */
 .brand {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
+  gap: 8px;
   text-decoration: none;
   color: var(--primary);
   font-weight: 700;
@@ -199,8 +200,8 @@ button {
 }
 
 .logo {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: var(--radius-md);
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   padding: 2px;
@@ -210,47 +211,50 @@ button {
 .brand-text {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0px;
   min-width: fit-content;
 }
 
 .brand-text h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0;
   color: var(--primary);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .brand-subtitle {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--secondary);
   margin: 0;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 /* Navigation Menu */
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 8px;
+  gap: 4px;
   align-items: center;
   margin: 0;
   padding: 0;
   flex-wrap: nowrap;
   flex-grow: 1;
   justify-content: flex-end;
+  min-width: 0;
 }
 
 .nav-link {
   color: var(--text-primary);
   font-weight: 500;
-  padding: 8px 12px;
+  padding: 6px 10px;
   border-radius: var(--radius-sm);
   transition: all var(--transition-base);
   position: relative;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   white-space: nowrap;
+  flex-shrink: 1;
+  min-width: fit-content;
 }
 
 .nav-link::after {
@@ -277,9 +281,9 @@ button {
   background: linear-gradient(135deg, var(--secondary), var(--secondary-light));
   color: white !important;
   font-weight: 600;
-  padding: 8px 16px;
+  padding: 6px 12px;
   border-radius: var(--radius-md);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   white-space: nowrap;
   flex-shrink: 0;
 }

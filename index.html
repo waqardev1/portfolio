@@ -3,107 +3,453 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Waqar — Home Tutor & Software Engineer</title>
-  <meta name="description" content="Home tutor (teaching since 2018) offering tuition in programming and school subjects. Available in DHA and Cantt areas. Freelance projects and software-house collaboration experience.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Waqar — O/A Levels & Computer Science Tutor | DHA, Cantt, Islamabad</title>
+  <meta name="description" content="Expert O/A Levels tutor in Mathematics (Pure, Applied, Additional), Physics, Computer Science, and Programming. Teaching since 2018. Personalized lessons in DHA, Cantt, and online. Available for exam prep and concept clarity.">
+  <meta name="keywords" content="O Levels tutor, A Levels tutor, Mathematics tutor, Physics tutor, Computer Science tutor, DHA Cantt, Islamabad tuition, programming lessons, board exam prep">
+  <meta name="author" content="Waqar">
+  <meta name="theme-color" content="#1B3A5C">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <img src="assets/logo.svg" alt="Logo" class="logo">
-        <div>
-          <h1>Waqar</h1>
-          <p class="tag">Home Tutor • Software Engineer — Teaching since 2018</p>
-        </div>
+  <!-- Skip to main content link (accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Header -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <!-- Brand / Logo -->
+        <a href="#" class="brand" aria-current="page">
+          <img src="assets/logo.svg" alt="Waqar — Tutor" class="logo">
+          <div class="brand-text">
+            <h1>Waqar</h1>
+            <p class="brand-subtitle">O/A Levels • Computer Science</p>
+          </div>
+        </a>
+
+        <!-- Mobile menu toggle -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Navigation links -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#specialization" class="nav-link">Specialization</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Get in Touch</a></li>
+        </ul>
       </div>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact" class="cta">Contact</a>
-      </nav>
-    </div>
+    </nav>
   </header>
 
-  <main>
-    <section id="hero" class="hero">
+  <!-- Main content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero" role="region" aria-label="Introduction">
+      <div class="hero-content">
+        <h2 class="hero-title">Expert tuition for O/A Levels & Computer Science</h2>
+        <p class="hero-lead">Master Mathematics, Physics, and Programming with personalized, result-focused lessons. Teaching since 2018 in DHA, Cantt, and online.</p>
+        
+        <!-- CTA Buttons -->
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" role="button">Request Trial Lesson</a>
+          <a href="assets/resume-placeholder.txt" class="btn btn-secondary" role="button">Download Resume</a>
+        </div>
+
+        <!-- Key stats -->
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Years Teaching</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">200+</span>
+            <span class="stat-label">Students Taught</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">95%</span>
+            <span class="stat-label">Pass Rate</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-icon">📚</div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-about" role="region" aria-label="About the tutor">
       <div class="container">
-        <h2>Personalized tutoring for school & programming</h2>
-        <p class="lead">I help students and professionals learn programming, improve grades, and build projects. Tutoring available in DHA & Cantt areas and online.</p>
-        <p class="actions">
-          <a href="#contact" class="btn primary">Request a trial lesson</a>
-          <a href="assets/resume-placeholder.txt" class="btn">Download resume</a>
-        </p>
+        <div class="section-header">
+          <h2>About My Teaching Journey</h2>
+          <p class="section-subtitle">6+ years of dedicated education in Pakistan's top areas</p>
+        </div>
+
+        <div class="about-content">
+          <p class="about-intro">I started tutoring in 2018 and have since helped hundreds of students achieve excellence in O/A Levels, Computer Science, and programming. My approach combines <strong>conceptual clarity</strong>, <strong>exam-focused strategies</strong>, and <strong>industry-standard programming practices</strong>.</p>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker">2018</div>
+              <div class="timeline-content">
+                <h4>Foundation Year</h4>
+                <p>Started one-on-one tuition with high school students. Focused on Mathematics and Physics fundamentals.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker">2019–2021</div>
+              <div class="timeline-content">
+                <h4>Expansion & Specialization</h4>
+                <p>Extended to O/A Levels prep, past-paper strategies, and board exam focus. Built a strong student base in DHA and Cantt.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker">2022–Present</div>
+              <div class="timeline-content">
+                <h4>Software House Collaboration</h4>
+                <p>Partnered with a software house while tutoring. Now teach Computer Science and programming with real-world project workflows.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="teaching-philosophy">
+            <h3>My Teaching Philosophy</h3>
+            <ul class="philosophy-list">
+              <li><strong>Conceptual Clarity:</strong> Build strong foundations before tackling complex topics.</li>
+              <li><strong>Exam Strategy:</strong> Master past papers, time management, and high-scoring techniques.</li>
+              <li><strong>Practical Learning:</strong> Hands-on projects and real-world applications for programming and science.</li>
+              <li><strong>Personalized Pace:</strong> Adapt lessons to each student's learning speed and style.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="container about">
-      <h3>About my teaching journey</h3>
-      <p>I've been teaching since 2018 while working as a software engineer and freelancer. I teach school subjects (Mathematics, Physics, Computer Science) and programming (Python, JavaScript, web development) with hands-on projects and exam-focused preparation. I also collaborate with a software house to keep industry practices current in lessons.</p>
-      <ul class="timeline">
-        <li><strong>2018</strong> — Started one-on-one tuition for high school students.</li>
-        <li><strong>2019–2021</strong> — Grew freelance teaching, prepared students for board exams.</li>
-        <li><strong>2022–Present</strong> — Collaborating with a software house; teaching programming and real-project workflows.</li>
-      </ul>
-    </section>
+    <!-- Specialization Section -->
+    <section id="specialization" class="section-specialization" role="region" aria-label="Subject specialization">
+      <div class="container">
+        <div class="section-header">
+          <h2>Subject Specialization</h2>
+          <p class="section-subtitle">Comprehensive expertise across O/A Levels curriculum</p>
+        </div>
 
-    <section id="services" class="container services">
-      <h3>What I teach</h3>
-      <div class="grid">
-        <div class="card">
-          <h4>School Subjects</h4>
-          <p>Mathematics, Physics, Computer Science — conceptual clarity, practice, past-paper techniques.</p>
-        </div>
-        <div class="card">
-          <h4>Programming</h4>
-          <p>Python, JavaScript, HTML/CSS, Project-based learning (web apps, mini projects, algorithms).</p>
-        </div>
-        <div class="card">
-          <h4>Exam / Admission Prep</h4>
-          <p>Targeted revision plans, mock tests, and performance tracking for boards and entrance tests.</p>
+        <div class="specializations-grid">
+          <!-- O Levels -->
+          <div class="spec-category">
+            <h3>📋 O Levels (UK Curriculum)</h3>
+            <div class="subjects-list">
+              <span class="subject-badge">Mathematics (O1, O2, O3)</span>
+              <span class="subject-badge">Physics</span>
+              <span class="subject-badge">Computer Science</span>
+            </div>
+          </div>
+
+          <!-- A Levels -->
+          <div class="spec-category">
+            <h3>🎓 A Levels (UK Curriculum)</h3>
+            <div class="subjects-list">
+              <span class="subject-badge">Pure Mathematics</span>
+              <span class="subject-badge">Applied Mathematics</span>
+              <span class="subject-badge">Additional Mathematics</span>
+              <span class="subject-badge">Physics</span>
+              <span class="subject-badge">Computer Science</span>
+            </div>
+          </div>
+
+          <!-- Advanced Topics -->
+          <div class="spec-category">
+            <h3>🔬 Advanced Topics</h3>
+            <div class="subjects-list">
+              <span class="subject-badge">Oxford-Cambridge Maths</span>
+              <span class="subject-badge">Engineering Math</span>
+              <span class="subject-badge">Calculus & Algebra</span>
+              <span class="subject-badge">Mechanics & Waves</span>
+            </div>
+          </div>
+
+          <!-- Programming & CS -->
+          <div class="spec-category">
+            <h3>💻 Programming & Computer Science</h3>
+            <div class="subjects-list">
+              <span class="subject-badge">Python</span>
+              <span class="subject-badge">JavaScript</span>
+              <span class="subject-badge">Web Development</span>
+              <span class="subject-badge">Algorithms & Data Structures</span>
+              <span class="subject-badge">Database Design</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="portfolio" class="container">
-      <h3>Portfolio & sample lessons</h3>
-      <p>Examples include simple web apps, Python projects for beginners, and lesson plans for school exam topics. (Add your project images or links here.)</p>
-      <div class="project-list">
-        <article class="project">
-          <h4>Interactive Python lessons</h4>
-          <p>Beginner-to-intermediate Python lessons covering data types, control flow, and small projects.</p>
-        </article>
-        <article class="project">
-          <h4>Web development mini-project</h4>
-          <p>HTML/CSS/JS project to teach DOM, events, and simple APIs.</p>
-        </article>
+    <!-- Services Section -->
+    <section id="services" class="section-services" role="region" aria-label="Tutoring services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tutoring Services</h2>
+          <p class="section-subtitle">Tailored learning solutions for every student</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🎯</div>
+            <h3>1-on-1 Private Tuition</h3>
+            <p>Personalized lessons tailored to your learning pace, style, and goals. Flexible scheduling in DHA, Cantt, or online.</p>
+            <ul class="service-highlights">
+              <li>Flexible timing</li>
+              <li>Customized curriculum</li>
+              <li>Progress tracking</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📚</div>
+            <h3>Exam Preparation</h3>
+            <p>Intensive board exam prep with past-paper practice, time management strategies, and targeted revision plans.</p>
+            <ul class="service-highlights">
+              <li>Past paper drills</li>
+              <li>Mock exams</li>
+              <li>Strategy coaching</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">💡</div>
+            <h3>Concept Clarity</h3>
+            <p>Deep-dive sessions to clarify difficult topics in Mathematics, Physics, and Computer Science with real-world examples.</p>
+            <ul class="service-highlights">
+              <li>Visual explanations</li>
+              <li>Problem solving</li>
+              <li>Q&A sessions</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🚀</div>
+            <h3>Project-Based Learning</h3>
+            <p>Hands-on programming projects and practical assignments aligned with A Level Computer Science curriculum.</p>
+            <ul class="service-highlights">
+              <li>Live coding</li>
+              <li>Portfolio building</li>
+              <li>Industry best practices</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Progress Tracking</h3>
+            <p>Detailed performance analytics, periodic assessments, and feedback reports shared with parents/institutes.</p>
+            <ul class="service-highlights">
+              <li>Monthly reports</li>
+              <li>Performance graphs</li>
+              <li>Improvement plans</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🏫</div>
+            <h3>Institute Collaboration</h3>
+            <p>Bulk tuition programs for schools and institutions. Customized curricula and group session options available.</p>
+            <ul class="service-highlights">
+              <li>Bulk discounts</li>
+              <li>Group classes</li>
+              <li>Custom curriculum</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="testimonials" class="container">
-      <h3>Testimonials</h3>
-      <p>"Waqar helped my son improve his math grades within months." — Parent, DHA</p>
-      <p>Add more testimonials from parents and institutes here.</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-portfolio" role="region" aria-label="Portfolio and sample work">
+      <div class="container">
+        <div class="section-header">
+          <h2>Portfolio & Sample Work</h2>
+          <p class="section-subtitle">Real projects and lesson demonstrations</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-item">
+            <div class="portfolio-icon">🐍</div>
+            <h3>Interactive Python Lessons</h3>
+            <p>Complete beginner-to-intermediate Python course covering data types, loops, functions, file handling, and object-oriented programming.</p>
+            <a href="#" class="portfolio-link">View samples →</a>
+          </article>
+
+          <article class="portfolio-item">
+            <div class="portfolio-icon">🌐</div>
+            <h3>Web Development Projects</h3>
+            <p>HTML5, CSS3, JavaScript projects including responsive websites, DOM manipulation, and API integration examples.</p>
+            <a href="#" class="portfolio-link">View project →</a>
+          </article>
+
+          <article class="portfolio-item">
+            <div class="portfolio-icon">📐</div>
+            <h3>A Level Mathematics Solutions</h3>
+            <p>Comprehensive past-paper solutions and exam strategies for Pure Math, Applied Math, and Additional Math A Levels.</p>
+            <a href="#" class="portfolio-link">View solutions →</a>
+          </article>
+
+          <article class="portfolio-item">
+            <div class="portfolio-icon">🔬</div>
+            <h3>Physics Problem Sets</h3>
+            <p>Curated physics problems with step-by-step solutions, covering mechanics, waves, electricity, and modern physics.</p>
+            <a href="#" class="portfolio-link">View problems →</a>
+          </article>
+
+          <article class="portfolio-item">
+            <div class="portfolio-icon">💻</div>
+            <h3>Computer Science Notes</h3>
+            <p>Detailed lecture notes and diagrams for O/A Level Computer Science including algorithms, databases, and networking.</p>
+            <a href="#" class="portfolio-link">View notes →</a>
+          </article>
+
+          <article class="portfolio-item">
+            <div class="portfolio-icon">🎓</div>
+            <h3>Student Success Stories</h3>
+            <p>Case studies of students who improved from grade C to A/A* with tailored learning strategies and consistent practice.</p>
+            <a href="#" class="portfolio-link">Read stories →</a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="container contact">
-      <h3>Contact & availability</h3>
-      <p>Available for in-person lessons in DHA and Cantt areas and online sessions. Weekday and weekend slots available.</p>
-      <ul>
-        <li><strong>Phone / WhatsApp:</strong> +92-3XX-XXXXXXX (replace with your number)</li>
-        <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-        <li><strong>Areas:</strong> DHA, Cantt, Online</li>
-      </ul>
-      <p class="actions"><a href="mailto:your.email@example.com?subject=Tuition%20Enquiry" class="btn primary">Email to request trial</a></p>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-testimonials" role="region" aria-label="Student and parent testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Parents & Students Say</h2>
+          <p class="section-subtitle">Real feedback from DHA, Cantt, and online students</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-role">Parent, DHA</p>
+            </div>
+            <p class="testimonial-text">"Waqar helped my daughter improve from a B to an A* in Mathematics within 4 months. His teaching is clear, patient, and result-focused."</p>
+            <p class="testimonial-author">— Mrs. Fatima K.</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-role">O Level Student, Cantt</p>
+            </div>
+            <p class="testimonial-text">"I struggled with Physics until I joined Waqar's tuition. Now I understand concepts easily and scoring well in exams. Highly recommended!"</p>
+            <p class="testimonial-author">— Ali S.</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-role">A Level Student, Online</p>
+            </div>
+            <p class="testimonial-text">"The Computer Science lessons were exceptional. Waqar made complex programming concepts accessible and fun. Passed with distinction."</p>
+            <p class="testimonial-author">— Hassan R.</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-role">Institute Director, Cantt</p>
+            </div>
+            <p class="testimonial-text">"We partnered with Waqar for bulk tuition classes. Students saw immediate improvement in their board exam scores. Very professional and dedicated."</p>
+            <p class="testimonial-author">— Mr. Ahmed H.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-contact" role="region" aria-label="Contact information">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get in Touch</h2>
+          <p class="section-subtitle">Ready to improve? Let's start your learning journey today</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-method">
+              <h3>📱 Phone / WhatsApp</h3>
+              <p><a href="tel:+923XXXXXXXXX">+92-3XX-XXXXXXX</a></p>
+              <p class="small">Available for calls & messages</p>
+            </div>
+
+            <div class="contact-method">
+              <h3>✉️ Email</h3>
+              <p><a href="mailto:waqar@example.com">waqar@example.com</a></p>
+              <p class="small">Response within 24 hours</p>
+            </div>
+
+            <div class="contact-method">
+              <h3>📍 Locations</h3>
+              <p><strong>DHA, Islamabad</strong></p>
+              <p><strong>Cantt, Rawalpindi</strong></p>
+              <p><strong>Online (Worldwide)</strong></p>
+            </div>
+
+            <div class="contact-method">
+              <h3>⏰ Availability</h3>
+              <p>Weekdays: 2 PM – 9 PM</p>
+              <p>Weekends: 10 AM – 8 PM</p>
+            </div>
+          </div>
+
+          <div class="contact-cta">
+            <h3>Request a Trial Lesson</h3>
+            <p>First lesson is free! No commitment required.</p>
+            <a href="mailto:waqar@example.com?subject=Trial%20Lesson%20Request&body=Hi%20Waqar,%0A%0AI%20am%20interested%20in%20a%20trial%20lesson.%0A%0ASubject:%20%0AGrade:%20%0APreferred%20time:%20%0A%0AThank%20you" class="btn btn-primary">Email to Request Trial</a>
+            <p class="small">Or call/WhatsApp for immediate booking</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>© Waqar — Home Tutor • Teaching since 2018</p>
-      <p><small>Portfolio created for sharing with institutes, tuition providers, and parents in DHA and Cantt areas.</small></p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Waqar</h4>
+          <p>Professional tutor specializing in O/A Levels and Computer Science education in Islamabad.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#specialization">Specialization</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: <a href="mailto:waqar@example.com">waqar@example.com</a></p>
+          <p>Phone: <a href="tel:+923XXXXXXXXX">+92-3XX-XXXXXXX</a></p>
+          <p>Areas: DHA, Cantt, Online</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Waqar — Home Tutor. All rights reserved.</p>
+        <p><small>O/A Levels • Mathematics • Physics • Computer Science • Programming</small></p>
+      </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

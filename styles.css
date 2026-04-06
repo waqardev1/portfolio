@@ -166,7 +166,8 @@ button {
 }
 
 .navbar {
-  padding: var(--spacing-md) 0;
+  padding: 12px 0;
+  height: auto;
 }
 
 .nav-container {
@@ -176,17 +177,21 @@ button {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-lg);
+  flex-wrap: nowrap;
+  gap: var(--spacing-md);
 }
 
 /* Brand / Logo */
 .brand {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
   text-decoration: none;
   color: var(--primary);
   font-weight: 700;
   transition: opacity var(--transition-base);
+  flex-shrink: 0;
+  min-width: fit-content;
 }
 
 .brand:hover {
@@ -194,49 +199,64 @@ button {
 }
 
 .logo {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: var(--radius-md);
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   padding: 2px;
+  flex-shrink: 0;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: fit-content;
 }
 
 .brand-text h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0;
   color: var(--primary);
+  line-height: 1.2;
 }
 
 .brand-subtitle {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: var(--secondary);
   margin: 0;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 /* Navigation Menu */
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: var(--spacing-lg);
+  gap: 8px;
   align-items: center;
   margin: 0;
   padding: 0;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
 .nav-link {
   color: var(--text-primary);
   font-weight: 500;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: 8px 12px;
   border-radius: var(--radius-sm);
   transition: all var(--transition-base);
   position: relative;
+  font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   left: 0;
   width: 0;
   height: 2px;
@@ -257,8 +277,11 @@ button {
   background: linear-gradient(135deg, var(--secondary), var(--secondary-light));
   color: white !important;
   font-weight: 600;
-  padding: var(--spacing-sm) var(--spacing-lg);
+  padding: 8px 16px;
   border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-cta::after {
@@ -275,16 +298,18 @@ button {
 .nav-toggle {
   display: none;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
-  padding: var(--spacing-sm);
+  padding: 8px;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .nav-toggle span {
-  width: 24px;
-  height: 2px;
+  width: 22px;
+  height: 2.5px;
   background-color: var(--primary);
   transition: all var(--transition-base);
   border-radius: 1px;

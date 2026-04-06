@@ -1,0 +1,22 @@
+:root{--bg:#f7f8fb;--muted:#666;--accent:#1b6df0;--card:#fff}
+*{box-sizing:border-box}body{font-family:Segoe UI,system-ui,Arial,sans-serif;margin:0;background:var(--bg);color:#222;line-height:1.5}
+.container{max-width:1000px;margin:0 auto;padding:28px}
+.site-header{background:#fff;border-bottom:1px solid #e6e9ef}
+.brand{display:flex;gap:14px;align-items:center}
+.logo{width:56px;height:56px}
+.tag{margin:0;color:var(--muted)}
+.nav{display:flex;gap:12px;align-items:center}
+.nav a{color:#222;text-decoration:none;padding:10px}
+.nav a.cta{background:var(--accent);color:#fff;border-radius:6px}
+.hero{padding:48px 0;background:linear-gradient(180deg,#fff, #f7fbff)}
+.hero h2{margin:0 0 10px;font-size:28px}
+.lead{color:var(--muted)}
+.actions .btn{display:inline-block;margin-right:10px;padding:10px 14px;border-radius:6px;text-decoration:none;border:1px solid transparent}
+.btn.primary{background:var(--accent);color:#fff}
+.card{background:var(--card);padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(16,24,40,.06)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.about,.services,.project-list{margin-top:20px}
+.timeline{padding-left:18px}
+.project{background:#fff;padding:14px;border-radius:8px;margin-bottom:10px}
+.site-footer{padding:18px 0;color:var(--muted)}
+@media (max-width:720px){.nav{display:none}.brand h1{font-size:20px}.container{padding:18px}.hero h2{font-size:22px}}

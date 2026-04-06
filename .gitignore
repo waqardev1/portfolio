@@ -1,0 +1,10 @@
+# Node / OS / Editor
+node_modules/
+.vscode/
+.DS_Store
+
+# Build output (if any)
+dist/
+
+# Resume or sensitive files (optional)
+assets/resume.pdf

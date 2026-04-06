@@ -1,0 +1,3 @@
+Replace this file with your real resume (PDF). Name it `resume.pdf` and place in this folder, then update the download link in `index.html` if needed.
+
+Suggested fields: Name, Contact, Teaching Experience (2018-present), Subjects, Sample Projects, Testimonials, Education, Certifications.

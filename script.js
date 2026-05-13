@@ -53,6 +53,38 @@ async function renderTimeline(){
 }
 renderTimeline();
 
+// Mobile drawer toggle
+const menuToggle = document.getElementById('menu-toggle');
+const mobileDrawer = document.getElementById('mobile-drawer');
+const mobileClose = document.getElementById('mobile-close');
+if(menuToggle && mobileDrawer){
+  menuToggle.addEventListener('click', ()=>{
+    const open = mobileDrawer.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+    mobileDrawer.setAttribute('aria-hidden', String(!open));
+  });
+}
+if(mobileClose){
+  mobileClose.addEventListener('click', ()=>{ mobileDrawer.classList.remove('open'); menuToggle.setAttribute('aria-expanded','false'); mobileDrawer.setAttribute('aria-hidden','true'); });
+}
+
+// Header shrink on scroll + active link detection
+const header = document.getElementById('site-header');
+const navLinks = document.querySelectorAll('.main-nav a');
+window.addEventListener('scroll', ()=>{
+  if(window.scrollY > 40) header.classList.add('shrink'); else header.classList.remove('shrink');
+  // active link
+  const fromTop = window.scrollY + 80;
+  navLinks.forEach(link=>{
+    const section = document.querySelector(link.getAttribute('href'));
+    if(section){
+      if(section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop){
+        link.classList.add('active');
+      } else link.classList.remove('active');
+    }
+  });
+});
+
 // Basic contact form handling (uses Formspree if configured, else mailto fallback)
 const form = document.getElementById('contact-form');
 form && form.addEventListener('submit', async (ev)=>{

@@ -11,27 +11,39 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <div class="container header-inner">
+      <nav class="main-nav" aria-label="Main navigation" id="main-nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#issues">Issues</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
       <div class="brand">
-        <div class="avatar" aria-hidden="true">
-          <img src="assets/avatar.svg" alt="Waqar Asghar avatar">
-        </div>
         <div class="brand-text">
-          <h1>Waqar Asghar</h1>
+          <h1 class="brand-title">Waqar Asghar</h1>
           <p class="muted">BS Software Engineering — Tutor</p>
         </div>
       </div>
+
       <div class="header-actions">
         <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-        <nav class="main-nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#timeline">Timeline</a>
-          <a href="#issues">Issues</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <a class="btn primary nav-cta" href="#contact">Book a free intro</a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-controls="mobile-drawer" aria-expanded="false">☰</button>
       </div>
+    </div>
+
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+      <button id="mobile-close" aria-label="Close menu">✕</button>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#issues">Issues</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 

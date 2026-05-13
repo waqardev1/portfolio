@@ -15,6 +15,8 @@ This is a lightweight single-page portfolio built for easy deployment to GitHub 
 - Update contact details in `index.html` and `assets/Waqar_Asghar_CV.txt`.
 - If you use Formspree, set the endpoint in `script.js` at the `endpoint` variable.
 
+Contact: waqar.asghar.online@gmail.com · +92-301-4831861
+
 ## Deploy to GitHub Pages
 
 1. Commit and push to `main`.

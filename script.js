@@ -121,6 +121,6 @@ form && form.addEventListener('submit', async (ev)=>{
     // mailto fallback
     const subject = encodeURIComponent('Tutoring inquiry from ' + (payload.name || '')); 
     const body = encodeURIComponent(`Email: ${payload.email}\nPhone: ${payload.phone || ''}\n\n${payload.message}`);
-    window.location.href = `mailto:youremail@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:waqar.asghar.online@gmail.com?subject=${subject}&body=${body}`;
   }
 });

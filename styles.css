@@ -1,7 +1,7 @@
 :root{
   /* slightly richer, warmer base while keeping the original accents */
   --bg:#ECE8E4; /* warmer off-white */
-  --surface:#FFFFFF; /* cards remain white for contrast */
+  --surface:#FFF8F0; /* warm cream surface for an educational, modern feel */
   --text:#0F1713; /* darker, deep charcoal-green */
   --muted:#55615A; /* slightly stronger muted tone */
   --accent:#8B4B6F; /* Dusty Plum (unchanged) */

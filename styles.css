@@ -15,7 +15,7 @@ body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue
 .site-header{background:transparent; position:sticky; top:0; z-index:120; transition:backdrop-filter .25s ease, padding .22s ease, background-color .22s ease;}
 .site-header.shrink{background:rgba(246,245,241,0.98);backdrop-filter:blur(6px);padding:6px 0}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
-.brand{display:flex;align-items:center;justify-content:center;flex-direction:column}
+.brand{display:flex;align-items:center;gap:12px}
 .brand img{width:52px;height:52px;border-radius:8px}
 .brand-text h1{margin:0;font-family:'Playfair Display',serif;font-size:18px}
 .muted{color:var(--muted)}
@@ -38,6 +38,7 @@ body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue
 .timeline-item .year{background:var(--accent-2);color:#111;padding:6px 10px;border-radius:999px;font-weight:600}
 
 /* Navigation specific */
+.main-nav{display:flex;gap:8px;align-items:center}
 .main-nav a, .mobile-nav a{color:var(--text);text-decoration:none;padding:8px 12px;position:relative}
 .main-nav a{margin:0 8px;font-weight:600}
 .main-nav a::after{content:'';position:absolute;left:12px;right:12px;height:2px;background:var(--accent);bottom:-6px;transform:scaleX(0);transform-origin:left center;transition:transform .25s ease}
@@ -58,6 +59,12 @@ body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue
   .menu-toggle{display:none}
   .mobile-drawer{display:none}
   .drawer-backdrop{display:none}
+  /* shift nav to sit between brand and actions */
+  .header-inner{grid-template-columns:auto 1fr auto}
+}
+
+@media (max-width:899px){
+  .main-nav{display:none}
 }
 .mobile-drawer #mobile-close{float:right;background:transparent;border:0;font-size:20px}
 .mobile-nav{display:flex;flex-direction:column;gap:10px;margin-top:24px}

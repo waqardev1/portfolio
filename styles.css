@@ -45,8 +45,20 @@ body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue
 
 /* Mobile drawer */
 .menu-toggle{background:transparent;border:0;font-size:20px;padding:8px}
-.mobile-drawer{position:fixed;inset:0;right:-100%;width:320px;background:var(--surface);box-shadow:-8px 0 24px rgba(22,33,24,0.12);transition:right .28s ease;padding:18px;z-index:140}
+.mobile-drawer{position:fixed;top:0;right:-100%;height:100vh;width:320px;background:var(--surface);box-shadow:-8px 0 24px rgba(22,33,24,0.12);transition:right .28s ease;padding:18px;z-index:140;display:block}
 .mobile-drawer.open{right:0}
+.drawer-backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:130;backdrop-filter:none}
+
+@media (max-width:480px){
+  .mobile-drawer{width:100%;}
+}
+
+/* Hide drawer on larger screens to avoid layout shift */
+@media (min-width:900px){
+  .menu-toggle{display:none}
+  .mobile-drawer{display:none}
+  .drawer-backdrop{display:none}
+}
 .mobile-drawer #mobile-close{float:right;background:transparent;border:0;font-size:20px}
 .mobile-nav{display:flex;flex-direction:column;gap:10px;margin-top:24px}
 .mobile-nav a{padding:10px;border-radius:8px}
